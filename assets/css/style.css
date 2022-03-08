@@ -15,7 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #d9232d;
+  color: #080808;
 }
 
 a:hover {
@@ -36,7 +36,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(73, 74, 77, 0.794);
+  background: rgb(192, 192, 195);
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
@@ -102,8 +102,8 @@ h6 {
   margin-left: 5px;
 }
 .navbar a:hover,
-.navbar .active,
 .navbar .active:focus,
+.breadcrumbs ol li:hover > a,
 .navbar li:hover > a {
   color: #a1252b;
   text-decoration: none;
@@ -132,7 +132,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: rgb(192, 192, 195);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -283,7 +283,7 @@ section {
 }
 .section-bg,
 .services .icon-box {
-  background-color: #969a9e;
+  background-color: rgba(209, 209, 209, 0.753);
 }
 
 .title {
@@ -317,7 +317,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services {
-  background: #32496dcc;
+  background: rgb(192 192 195 / 42%);
   padding-bottom: 80px;
 }
 .services .icon-box {
@@ -340,6 +340,38 @@ section {
   line-height: 24px;
   font-size: 15px;
   font-weight: 500;
+}
+/*--------------------------------------------------------------
+# BreadCrumbs
+--------------------------------------------------------------*/
+
+.breadcrumbs {
+  padding: 15px 0;
+  background-color: #d9dee3;
+  min-height: 40px;
+}
+.breadcrumbs h2 {
+  font-size: 28px;
+  font-weight: 300;
+}
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumbs ol li a {
+  color: #000000;
+}
+.breadcrumbs ol li {
+  padding-left: 10px;
+}
+.breadcrumbs ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: rgb(0, 0, 0);
+  content: "/";
 }
 
 /*--------------------------------------------------------------
@@ -454,30 +486,4 @@ section {
 }
 #footer .credits a:hover {
   color: white;
-}
-
-.breadcrumbs {
-  padding: 15px 0;
-  background-color: #1f93c0;
-  min-height: 40px;
-}
-.breadcrumbs h2 {
-  font-size: 28px;
-  font-weight: 300;
-}
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
 }
