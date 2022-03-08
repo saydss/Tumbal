@@ -13,23 +13,34 @@ a:hover {
   text-decoration: none;
 }
 
-.struktur p {
+.visimisi p {
   font-size: 20 px;
   font-weight: 450;
 }
-#struktur .struktur p i {
+#visimisi .visimisi p i {
   font-weight: bold;
   font-size: 100px;
 }
-.struktur ol {
+.visimisi ol {
   font-weight: 450;
   padding: 0;
 
   margin-left: 20px;
 }
-.struktur ol li {
+.visimisi ol li {
   text-align: justify;
   margin-bottom: 5px;
   padding-left: 20px;
   font-size: 20px;
+}
+/*--------------------------------------------------------------
+# Bidang & Sekretariat
+--------------------------------------------------------------*/
+.bidang ul li,
+.bidang ol li {
+  font-size: 20px;
+}
+.bidang h3 {
+  text-align: center;
+  margin-bottom: 25px;
 }
