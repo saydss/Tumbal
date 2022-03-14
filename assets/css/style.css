@@ -1,10 +1,3 @@
-/**
-* Template Name: Sailor - v4.7.0
-* Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -313,6 +306,36 @@ section {
   color: #556270;
 } */
 
+/*--------------------------------------------------------------
+# Sambutan
+--------------------------------------------------------------*/
+.sambutan {
+  margin-bottom: 0px;
+  line-height: 20px;
+  max-height: calc(20px * 5);
+  overflow: hidden;
+}
+.button-readmore {
+  cursor: pointer;
+  color: #d9232d;
+  padding: 5px 0 0 8px;
+}
+.button-readmore::after {
+  content: "Read More";
+}
+/* .button-readmore:hover {
+  color: #d9232d;
+} */
+#check-readmore:checked ~ .button-readmore::after {
+  content: "Read Less";
+}
+#check-readmore:checked ~ .sambutan {
+  max-height: 100vh;
+}
+#check-readmore {
+  position: absolute;
+  left: -2000px;
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
