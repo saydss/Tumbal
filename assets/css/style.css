@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-  color: #e24d55;
+  color: #ff000d;
   text-decoration: none;
 }
 
@@ -29,7 +29,9 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgb(192, 192, 195);
+  height: 80px;
+  background: #80a1d1;
+  /* background: rgb(192, 192, 195); */
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
@@ -98,12 +100,12 @@ h6 {
 .navbar .active:focus,
 .breadcrumbs ol li:hover > a,
 .navbar li:hover > a {
-  color: #a1252b;
+  color: #ff000d;
   text-decoration: none;
 }
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #d9232d;
+  background: #ff000d;
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 4px;
@@ -113,7 +115,7 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #e1444d;
+  background: #ff000d;
 }
 .navbar .dropdown ul {
   display: block;
@@ -144,7 +146,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #d9232d;
+  color: #ff000d;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -232,7 +234,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #d9232d;
+  color: #ff000d;
 }
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
@@ -261,7 +263,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #d9232d;
+  color: #ff000d;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -270,12 +272,11 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 49.5px 0;
+  padding-top: 80px;
   overflow: hidden;
   /* background: blueviolet; */
 }
-.section-bg,
-.services .icon-box {
+.section-bg {
   background-color: rgba(209, 209, 209, 0.753);
 }
 
@@ -317,7 +318,7 @@ section {
 }
 .button-readmore {
   cursor: pointer;
-  color: #d9232d;
+  color: #ff000d;
   padding: 5px 0 0 8px;
 }
 .button-readmore::after {
@@ -339,9 +340,16 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#services .title {
+  line-height: 50px;
+  padding-bottom: 10px;
+}
 .services {
   background: rgb(192 192 195 / 42%);
   padding-bottom: 80px;
+}
+.berita {
+  margin-bottom: 0px;
 }
 .services .icon-box {
   margin-bottom: 20px;
@@ -350,7 +358,8 @@ section {
 }
 
 .services .icon-box h4 {
-  text-align: center;
+  /* text-align: center; */
+  padding: 0 5px 0 5px;
   margin: 10px 5px 15px 5px;
   font-weight: 600;
   font-size: 18px;
@@ -364,6 +373,39 @@ section {
   font-size: 15px;
   font-weight: 500;
 }
+/*--------------------------------------------------------------
+# Sosial Media
+--------------------------------------------------------------*/
+#media .col-md-6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#media a {
+  margin: auto;
+}
+#media .icon-box {
+  background-color: rgb(255, 255, 255);
+  color: #ff000d;
+  margin: auto;
+  width: 100px;
+  position: relative;
+  text-align: center;
+  padding: 15px;
+  border-radius: 70%;
+  box-shadow: 0px 2px 15px rgb(173, 173, 173);
+  /* background-color: #faf6f6; */
+}
+
+#media .icon-box:hover {
+  /* color: #ff000d; */
+  box-shadow: 0px 2px 15px #5b7db1;
+}
+#media .icon-box .bi {
+  font-size: 50px;
+}
+/* #socialmedia i {
+} */
+
 /*--------------------------------------------------------------
 # BreadCrumbs
 --------------------------------------------------------------*/
@@ -401,7 +443,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #4a5562;
+  background: #329b95;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -434,79 +476,4 @@ section {
 }
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
-}
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 18px;
-  line-height: 1;
-}
-#footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-#footer .footer-top .footer-links ul a {
-  color: rgba(255, 255, 255, 0.6);
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
-}
-#footer .footer-top .footer-links ul a:hover {
-  color: white;
-}
-#footer .footer-top .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px;
-}
-#footer .footer-top .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px;
-  width: calc(100% - 110px);
-}
-#footer .footer-top .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: -2px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px 2px 20px;
-  background: #d9232d;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-}
-#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: #df3740;
-}
-#footer .copyright {
-  text-align: center;
-  padding-top: 30px;
-}
-#footer .credits {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.6);
-}
-#footer .credits a {
-  color: rgba(255, 255, 255, 0.6);
-  transition: 0.3s;
-  font-weight: 600;
-}
-#footer .credits a:hover {
-  color: white;
 }
