@@ -24,13 +24,15 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-
+main {
+  padding-top: 80px;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
   height: 80px;
-  background: #80a1d1;
+  background: #e1e5ea;
   /* background: rgb(192, 192, 195); */
   transition: all 0.5s;
   z-index: 997;
@@ -57,6 +59,9 @@ h6 {
 #header .logo img {
   max-height: 40px;
 }
+#header .container {
+  max-width: 1330px;
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -66,6 +71,7 @@ h6 {
 */
 .navbar {
   padding: 0;
+  margin-left: 450px;
 }
 .navbar ul {
   margin: 0;
@@ -84,7 +90,7 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   color: #000000;
   white-space: nowrap;
@@ -164,14 +170,14 @@ h6 {
   left: 100%;
   visibility: visible;
 }
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
-}
+} */
 
 /**
 * Mobile Navigation 
@@ -272,7 +278,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding-top: 80px;
+  /* padding-top: 80px; */
   overflow: hidden;
   /* background: blueviolet; */
 }
@@ -346,7 +352,7 @@ section {
 }
 .services {
   background: rgb(192 192 195 / 42%);
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
 }
 .berita {
   margin-bottom: 0px;
@@ -390,6 +396,7 @@ section {
   width: 100px;
   position: relative;
   text-align: center;
+  margin-bottom: 10px;
   padding: 15px;
   border-radius: 70%;
   box-shadow: 0px 2px 15px rgb(173, 173, 173);
@@ -405,6 +412,16 @@ section {
 }
 /* #socialmedia i {
 } */
+
+/*--------------------------------------------------------------
+# Youtube
+--------------------------------------------------------------*/
+.youtube {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 /*--------------------------------------------------------------
 # BreadCrumbs
@@ -443,7 +460,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #329b95;
+  background: #98b596;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
