@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-  color: #ff000d;
+  color: rgb(255, 83, 15);
   text-decoration: none;
 }
 
@@ -444,8 +444,8 @@ section {
   /* border-top: solid; */
   /* border-bottom: solid;
   border-color: #ff4800; */
-  background-color: #37a09959;
-  background-color: #04a38e49;
+
+  background-color: #00c5ab32;
   min-height: 40px;
 }
 .breadcrumbs h2 {
