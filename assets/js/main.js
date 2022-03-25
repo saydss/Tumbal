@@ -112,29 +112,29 @@
    * Porfolio isotope and filter
    */
   window.addEventListener("load", () => {
-    let portfolioContainer = select(".portfolio-container");
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: ".portfolio-wrap",
+    let galeriContainer = select(".galeri-container");
+    if (galeriContainer) {
+      let galeriIsotope = new Isotope(galeriContainer, {
+        itemSelector: ".galeri-wrap",
         layoutMode: "fitRows",
       });
 
-      let portfolioFilters = select("#portfolio-flters li", true);
+      let galeriFilters = select("#galeri-flters li", true);
 
       on(
         "click",
-        "#portfolio-flters li",
+        "#galeri-flters li",
         function (e) {
           e.preventDefault();
-          portfolioFilters.forEach(function (el) {
+          galeriFilters.forEach(function (el) {
             el.classList.remove("filter-active");
           });
           this.classList.add("filter-active");
 
-          portfolioIsotope.arrange({
+          galeriIsotope.arrange({
             filter: this.getAttribute("data-filter"),
           });
-          portfolioIsotope.on("arrangeComplete", function () {
+          galeriIsotope.on("arrangeComplete", function () {
             AOS.refresh();
           });
         },
@@ -144,16 +144,16 @@
   });
 
   /**
-   * Initiate portfolio lightbox
+   * Initiate galeri lightbox
    */
-  const portfolioLightbox = GLightbox({
-    selector: ".portfolio-lightbox",
+  const galeriLightbox = GLightbox({
+    selector: ".galeri-lightbox",
   });
 
   /**
-   * Portfolio details slider
+   * galeri details slider
    */
-  new Swiper(".portfolio-details-slider", {
+  new Swiper(".galeri-details-slider", {
     speed: 400,
     loop: true,
     autoplay: {
@@ -168,10 +168,10 @@
   });
 
   /**
-   * Initiate portfolio details lightbox
+   * Initiate galeri details lightbox
    */
-  const portfolioDetailsLightbox = GLightbox({
-    selector: ".portfolio-details-lightbox",
+  const galeriDetailsLightbox = GLightbox({
+    selector: ".galeri-details-lightbox",
     width: "90%",
     height: "90vh",
   });
