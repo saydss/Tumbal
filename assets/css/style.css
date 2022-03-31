@@ -309,14 +309,14 @@ section {
   font-weight: 500;
   padding: 0;
   margin: 0 0 20px 0;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: #000000;
   font-family: "Poppins", sans-serif;
 }
 .col-lg-4 {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 28px;
+  margin-right: 28px;
 }
 /* .section-title p {
   margin: 0;
@@ -397,8 +397,10 @@ section {
   font-weight: 500;
 }
 .services .gambar img {
-  max-height: 200px;
-  max-width: 300px;
+  max-height: 280px;
+  max-width: 400px;
+  min-height: 280px;
+  max-width: 400px;
 }
 /*--------------------------------------------------------------
 # Sosial Media
