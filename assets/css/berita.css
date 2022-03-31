@@ -1,4 +1,25 @@
 /*--------------------------------------------------------------
+# gambar
+--------------------------------------------------------------*/
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(30%);
+}
+.entry .carousel-inner img {
+  margin: auto;
+  min-height: 400px;
+  max-height: 400px;
+  max-width: 500px;
+  min-width: 500px;
+}
+#artikel .entry .carousel-inner img {
+  margin: auto;
+  min-height: 500px;
+  max-height: 500px;
+  max-width: 750px;
+  min-width: 750px;
+}
+/*--------------------------------------------------------------
 # artikel
 --------------------------------------------------------------*/
 .artikel {
@@ -13,16 +34,17 @@
   margin: 0 auto 10px auto;
   margin-right: auto;
   margin-left: auto;
-  /* max-height: 440px; */
 
   overflow: hidden;
 }
 .artikel .entry .entry-img img {
-  width: 100%;
-  height: 100%;
+  max-height: 550px;
+  min-height: 550px;
+  min-width: 800px;
+  max-width: 800px;
   object-fit: cover;
-  margin-right: auto;
-  margin-left: auto;
+
+  margin: auto;
 }
 .artikel .entry .entry-title {
   font-size: 28px;
@@ -206,11 +228,17 @@
   margin: -30px -30px 20px -30px;
   overflow: hidden;
 }
+.berita .entry .entry-img img {
+  max-height: 500px;
+  min-height: 500px;
+  max-width: 500px;
+  min-width: 500px;
+}
 .berita .entry .entry-title {
   font-size: 28px;
   font-weight: bold;
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 20px 0;
 }
 .berita .entry .entry-title a {
   color: #000000;
